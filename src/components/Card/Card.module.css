@@ -1,0 +1,10 @@
+.divContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #c5c5c5a2;
+    /* background-image: url (https://i.blogs.es/669147/ram-s6-key--rt-1920x1080/1366_2000.jpeg); */
+  }
