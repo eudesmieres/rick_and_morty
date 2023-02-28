@@ -1,3 +1,4 @@
+import styles from "../Detail/Detail.module.css";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
@@ -23,14 +24,18 @@ const Detail = () => {
   }, [detailId]);
 
   return (
-    <div>
+    <div className={styles.detailContainer}>
       <Link to="/home">Home</Link>
       <h1>{character?.name}</h1>
       <p>{character?.status}</p>
       <p>{character?.species}</p>
       <p>{character?.gender}</p>
       <p>{character?.origin?.name}</p>
-      <img src={character?.image} alt={character?.name} />
+      <img
+        className={styles.imagen}
+        src={character?.image}
+        alt={character?.name}
+      />
     </div>
   );
 };

@@ -1,0 +1,26 @@
+/* .verde {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 3em;
+    display: inline-block;
+    flex-direction: row;
+    width: 40vw;
+    height: 10vh;
+    background-color: #4fff6c47;
+  
+  }
+
+  .otro {
+    display:flex;
+    justify-content: space-between;
+    margin: left 50px; ;
+} */
+
+.separationCards {
+    display: grid;
+    margin: 0px auto;
+    max-width: 1000px;
+    gap: 25px;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}

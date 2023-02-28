@@ -1,14 +1,26 @@
 import SearchBar from "../SearchBar/SearchBar";
+import styles from "../Nav/Nav.module.css";
+import logo from "../Nav/logorick.png";
 import { Link } from "react-router-dom";
 
 const Nav = ({ onSearch }) => {
   return (
-    <nav>
-      <Link to="/">LOGOUT</Link>
-      <Link to="/about">About</Link>
-      <Link to="/home">Home</Link>
-
-      <SearchBar onSearch={onSearch} />
+    <nav className={styles.NavContainer}>
+      <div className={styles.button}>
+        <Link to="/" className={styles.logout}>
+          LOGOUT
+        </Link>
+        <Link to="/about" className={styles.about}>
+          About
+        </Link>
+        <Link to="/home" className={styles.home}>
+          Home
+        </Link>
+      </div>
+      <div className={styles.buttonSearch}>
+        <img className={styles.img} src={logo} alt="" />
+        <SearchBar onSearch={onSearch} />
+      </div>
     </nav>
   );
 };

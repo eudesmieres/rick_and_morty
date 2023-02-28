@@ -1,8 +1,9 @@
 import Card from "../Card/Card.jsx";
+import style from "../Cards/Cards.module.css";
 
 export default function Cards({ characters, onClose }) {
   return (
-    <div>
+    <div className={style.separationCards}>
       {characters.map(({ id, name, species, gender, image }) => {
         return (
           <Card

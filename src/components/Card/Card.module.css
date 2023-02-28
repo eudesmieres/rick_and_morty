@@ -1,10 +1,61 @@
 .divContainer {
+border: 1px solid rgba(45, 161, 149, 0.425);
+background-color: rgba(37, 238, 238, 0.141);
+border-radius: 10px;
+width: 170px;
+padding: 10px;
+box-shadow: 0 0 10px #ffffff8a; 
+}
+
+.image {
+  width: 150px;
+  height: 150px;
+  background-size: cover; /*Ajusta la imagen al contenedor*/
+  border-radius: 50%; /*Da la apariencia redonda*/
+}
+
+.buttonContainerx {
+  /* border: 1px solid grey; contenedor del button */
+  display:flex;
+  justify-content: flex-end;
+}
+
+.buttonContainerx button {
+   background-color: rgb(90, 121, 124);
+   color: white;
+   border: 0px;
+   border-radius: 2px;
+}
+
+.dataContainer {
+  text-align: center;
+  padding: 10px;
+}
+
+.dataContainer h2 {
+  margin: 2px;
+  font-size: 16px;
+  color: rgb(220, 255, 255);
+}
+
+.dataContainer h4 {
+  margin: 2px;
+  font-size: 14px;
+  color: rgba(101, 255, 24, 0.751);
+}
+
+
+
+
+
+
+
+/* {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100vw;
     height: 100vh;
-    background-color: #c5c5c5a2;
+    background-color: #c5c5c523;
     /* background-image: url (https://i.blogs.es/669147/ram-s6-key--rt-1920x1080/1366_2000.jpeg); */
-  }
