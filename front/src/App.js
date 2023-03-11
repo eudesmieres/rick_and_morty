@@ -8,13 +8,13 @@ import Detail from './components/Detail/Detail';
 import Form from './components/Form/Form';
 import Favorites from './components/Favorites/Favorites';
 import { useDispatch, useSelector } from 'react-redux';
-import { getCharacter } from './redux/actions/actions';
+// import { getCharacter } from './redux/actions/actions';
 
 //import styles from './components/Card.module.css'
 
 function App() {
-  const dispatch = useDispatch();
-  const allCharacters = useSelector(state => state.allCharacters);
+  // const dispatch = useDispatch();
+  // const allCharacters = useSelector(state => state.allCharacters);
 
   const location = useLocation();
   const navigate = useNavigate();
@@ -39,7 +39,7 @@ function App() {
 
 
   const onSearch = (character) => {
-    fetch(`http://localhost:3001/rickandmorty/character/${character}`)
+    fetch(`http://localhost:3001/rickandmorty/onsearch/${character}`)
       .then((response) => response.json())
       .then((data) => {
         if (data.name) {
